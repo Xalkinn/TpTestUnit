@@ -17,4 +17,6 @@ public class MyIpService {
 		Map<String, String> map = gson.<Map<String, String>>fromJson(jsonIp, Map.class);
 		return map.get("ip").split(",")[0];
 	}
+	
+	
 }
