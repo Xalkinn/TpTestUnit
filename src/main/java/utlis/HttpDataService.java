@@ -2,12 +2,12 @@ package utlis;
 
 import java.io.IOException;
 
-import org.junit.runner.Request;
+import org.apache.http.client.fluent.Request;
 
 public class HttpDataService {
-	public static String url = "http://jsonip.com";
+	public String url = "http://jsonip.com";
 
-	public static String getJsonIp() {
+	public String getJsonIp() {
 		try {
 			return Request.Get(url).execute().returnContent().toString();
 		} catch (IOException e) {
