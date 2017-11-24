@@ -31,4 +31,11 @@ public class DivisibleTest {
 		List<Integer> even = Divisible.nombre(liste);
 		Assert.assertThat(even, Is.is(Arrays.asList(3, 5, 6, 9, 10)));
 	}
+	
+	@Test
+	public void divisiblepar5et3() {
+		List<Integer> liste = Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
+		List<Integer> even = Divisible.nombre(liste);
+		Assert.assertThat(even, Is.is(Arrays.asList(3, 5, 6, 9, 10)));
+	}
 }

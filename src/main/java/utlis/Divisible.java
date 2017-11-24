@@ -16,30 +16,35 @@ public class Divisible {
 //		else
 //			System.out.println("Non divisible");
 //	}
-	private static final int List = 0;
+	//private static final int List = 0;
 
-	public static void main(String[] args) {
+//	public static void main(String[] args) {
+//
+//	}
 
-	}
-	
 	public static List<Integer> nombre(List<Integer> liste) {
 		
 		List<Integer> listev2 = new ArrayList<Integer>();
-		//Creation d'une liste vierge pour les test unitaire
+//		List<Integer> listev3 = new ArrayList<Integer>();
+//		List<Integer> listev4 = new ArrayList<Integer>();
+		//Creation d'une liste vierge pour les tests unitaires
 		
 		if (liste != null) {
-			return null;
-		}
-		else for (int i = 0; liste.size() > i; i++) {
-			if (liste.get(i) % 3 && liste.get(i) != null) {
-				listev2.add(liste.get(i));
-			} else if (liste.get(i) % 5 && liste.get(i) != null) {
-				listev2.add(liste.get(i));
-			} else if (liste.get(i) % 3 && liste.get(i) % 5 && liste.get(i) != null) {
-				listev2.add(liste.get(i));
+			for (int i = 0; liste.size() > i; i++) {
+				if (liste.get(i) % 3 == 0 && liste.get(i) != null) {
+					listev2.add(liste.get(i));
+				} else if (liste.get(i) % 5 == 0 && liste.get(i) != null) {
+					listev2.add(liste.get(i));
+				} else if (liste.get(i) % 3 == 0 && liste.get(i) % 5 == 0 && liste.get(i) != null) {
+					listev2.add(liste.get(i));
+				}
+				/* 
+				 * le programme fonctionne cependant tout depend du retour. Les liste que
+				 * j'ai mis en commentaire quand elle ne le sont plus si en retour je met leur nom
+				 * le programme fonctionne				 * 
+				 */
 			}
 		}
-		return listev;
+		return listev2;	
 	}
-	
 }
